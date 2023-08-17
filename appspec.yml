@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: target/hello-world-0.0.1-SNAPSHOT.jar
+    destination: /webapps/hello-world-0.0.1-SNAPSHOT.jar
+hooks:
+  ApplicationStart:
+    - location: scripts/AppStart.sh
+      timeout: 3600
