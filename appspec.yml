@@ -4,6 +4,9 @@ files:
   - source: target/
     destination: /webapps
 hooks:
+  BeforeInstall:
+    - location: scripts/AppKill.sh
+      timeout: 10
   ApplicationStart:
     - location: scripts/AppStart.sh
-      timeout: 3600
+      timeout: 120
