@@ -20,3 +20,4 @@ artifacts:
     - appspec.yml
     - scripts/server_start.sh
     - scripts/server_stop.sh
+    - scripts/server_validate.sh
