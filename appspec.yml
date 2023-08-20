@@ -4,9 +4,12 @@ files:
   - source: target/
     destination: /webapps
 hooks:
-  BeforeInstall:
-    - location: scripts/AppKill.sh
-      timeout: 10
+  ApplicationStop:
+    - location: scripts/server_stop.sh
+      timeout: 20
   ApplicationStart:
-    - location: scripts/AppStart.sh
-      timeout: 120
+    - location: scripts/server_start.sh
+      timeout: 20
+  ValidateService:
+    - location: scripts/server_validate.sh
+      timeout: 60

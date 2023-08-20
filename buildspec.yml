@@ -18,5 +18,5 @@ artifacts:
   files:
     - target/hello-world-0.0.1-SNAPSHOT.jar
     - appspec.yml
-    - scripts/AppStart.sh
-    - scripts/AppKill.sh
+    - scripts/server_start.sh
+    - scripts/server_stop.sh
